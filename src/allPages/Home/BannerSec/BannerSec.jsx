@@ -16,7 +16,7 @@ const BannerSec = () => {
                     </div>
                 </div>
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" className="btn btn-circle">❮</a>
+                    <a href="#slide3" className="btn btn-circle">❮</a>
                     <a href="#slide2" className="btn btn-circle">❯</a>
                 </div>
             </div>
@@ -36,14 +36,15 @@ const BannerSec = () => {
             </div>
             <div id="slide3" className="carousel-item relative w-full">
                 <img src={banner3} className="w-full " />
-                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <h2>Discover Endless Adventures with Educational Toys!</h2>
-                    <p>
-                        Unlock the Power of Imagination with our Knowledge-Boosting Toys! Imagination is the gateway to creativity and innovation. Our knowledge-boosting toys are designed to fuel the imagination and inspire children to dream big. From imaginative playsets that transport them to different professions and cultures to storytelling kits that encourage language and communication skills, our toys provide a platform for self-expression and exploration. Let your child ids imagination soar as they build, create, and embark on imaginative journeys, all while gaining valuable knowledge along the way.
-                    </p>
+                <div className="absolute  flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#5c22e0c4] to-[#faf9fa19]">
+                    <div className='text-[#1a1818] space-y-7 pl-20 w-3/4 '>
+                        <h2 className='text-6xl font-bold leading-tight'>Discover Endless <br /> Adventures with Educational Toys!</h2>
+                        <p className='w-3/4 text-#727272'>knowledge-boosting toys are designed to fuel the imagination and inspire children to dream big. Let your child ids imagination soar as they build, create, and embark on imaginative journeys, all while gaining valuable knowledge along the way.</p>
+                      
+                    </div>
                 </div>
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" className="btn btn-circle">❮</a>
+                    <a href="#slide2" className="btn btn-circle">❮</a>
                     <a href="#slide1" className="btn btn-circle">❯</a>
                 </div>
             </div>
