@@ -22,11 +22,12 @@ const BannerSec = () => {
             </div>
             <div id="slide2" className="carousel-item relative w-full">
                 <img src={banner2} className="w-full h-4/4" />
-                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <h2>Unlock the Power of Imagination with our Knowledge-Boosting Toys!</h2>
-                    <p>
-                        Discover Endless Adventures with Educational Toys! Prepare for exciting journeys of knowledge with our collection of educational toys. From interactive maps that teach geography and history to building sets that develop engineering and critical thinking skills, our toys open up a world of possibilities. Watch as your child embarks on thrilling adventures, solving puzzles, conducting experiments, and expanding their understanding of the world around them. With our educational toys, learning becomes an immersive and captivating experience.
-                    </p>
+                <div className="absolute  flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#5c22e0c4] to-[#faf9fa19]">
+                    <div className='text-[#1a1818] space-y-7 pl-20 w-3/4 '>
+                        <h2 className='text-6xl font-bold leading-tight'>Unlock The Power of thought with our Knowledge-Boosting Toys!</h2>
+                        <p className='w-3/4 text-#727272'>Discover Endless Adventures with Educational Toys! Prepare for exciting journeys of knowledge with our collection of educational toys. With our educational toys, learning becomes an immersive and captivating experience.</p>
+                      
+                    </div>
                 </div>
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide1" className="btn btn-circle">❮</a>
