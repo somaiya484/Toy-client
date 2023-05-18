@@ -1,8 +1,9 @@
+import BannerSec from "../BannerSec/BannerSec";
 
 const Banner = () => {
     return (
         <div>
-            <h2>this is home</h2>
+            <BannerSec></BannerSec>
         </div>
     );
 };
