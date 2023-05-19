@@ -5,6 +5,7 @@ import { AuthContext } from '../../authProviders/AuthProvider';
 
 
 const Signup = () => {
+
     const {createNewUser} = useContext(AuthContext);
 
 
@@ -22,6 +23,7 @@ const Signup = () => {
             const user = result.user;
             console.log(user)
         })
+        .catch(error => console.log(error))
     }
 
     return (

@@ -1,11 +1,26 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import loginPhoto from '../../assets/login.jpg'
+import {  useContext } from 'react';
+import { AuthContext } from '../../authProviders/AuthProvider';
 
 
 const Login = () => {
-    const handleLogIn = (event) =>{
-        event.preventDefault();
 
+    const {signIn} = useContext(AuthContext);
+    const navigate = useNavigate();
+
+    const handleLogIn = (event) => {
+        event.preventDefault();
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        signIn(email, password)
+        .then(result =>{
+            const loggedUser = result.user;
+            navigate('/')
+            console.log(loggedUser)
+        })
+        .catch(error => console.log(error))
     }
 
     return (
@@ -36,7 +51,7 @@ const Login = () => {
                                     <input type="submit" value="Log In" className="btn bg-purple-700 hover:bg-transparent hover:border-purple-700 hover:text-black" />
                                 </div>
                             </form>
-                           <Link to='/signUp'> <a href="#" className="label-text-alt link link-hover mt-5 text-purple-700 ">New here? Then sign up </a></Link>
+                            <Link to='/signUp'> <a href="#" className="label-text-alt link link-hover mt-5 text-purple-700 ">New here? Then sign up </a></Link>
                         </div>
                     </div>
                 </div>
