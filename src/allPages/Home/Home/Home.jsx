@@ -1,9 +1,11 @@
+import Gallery from "../../Others/Gallery/Gallery";
 import BannerSec from "../BannerSec/BannerSec";
 
 const Banner = () => {
     return (
-        <div>
+        <div className="bg-purple-100">
             <BannerSec></BannerSec>
+            <Gallery></Gallery>
         </div>
     );
 };
