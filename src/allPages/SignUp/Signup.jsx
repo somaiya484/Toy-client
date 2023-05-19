@@ -1,11 +1,27 @@
+import { useContext } from 'react';
 import signUpPhoto from '../../assets/login.jpg'
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../authProviders/AuthProvider';
 
 
 const Signup = () => {
+    const {createNewUser} = useContext(AuthContext);
+
+
     const handleSignUp = (event) =>{
         event.preventDefault();
+        const form = event.target;
+        const name = form.name.value;
+        const email = form.email.value;
+        const password = form.password.value
+        const photo = form.photo.value;
+        console.log(name, email, password, photo)
 
+        createNewUser(email, password)
+        .then(result =>{
+            const user = result.user;
+            console.log(user)
+        })
     }
 
     return (
