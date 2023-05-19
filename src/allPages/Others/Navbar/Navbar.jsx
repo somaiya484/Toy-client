@@ -1,10 +1,22 @@
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../authProviders/AuthProvider';
 
 const Navbar = () => {
+    const {user} = useContext(AuthContext);
+
+
     const navbarPages = <>
         <li className='text-purple-900 hover:underline'><Link>Home</Link></li>
         <li className='text-purple-900  hover:underline'><Link>Blogs</Link></li>
         <li className='text-purple-900  hover:underline'><Link>All Toys</Link></li>
+        
+        {
+            user?.email ? 
+                <li><button className='btn bg-purple-700 text-white font-semibold rounded-md'>LogOut</button></li>
+            : 
+                <li className='btn bg-purple-700 text-white font-semibold rounded-md'><Link to='/login'>Login</Link></li>
+        }
     </>
 
     return (
