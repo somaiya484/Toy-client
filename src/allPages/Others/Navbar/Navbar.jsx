@@ -3,20 +3,33 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../authProviders/AuthProvider';
 
 const Navbar = () => {
-    const {user} = useContext(AuthContext);
+    const {user, logOut} = useContext(AuthContext);
+    const LogOut = () =>{
+        logOut()
+        .then()
+        .catch(error => console.log(error))
+    }
 
 
     const navbarPages = <>
         <li className='text-purple-900 hover:underline'><Link>Home</Link></li>
         <li className='text-purple-900  hover:underline'><Link>Blogs</Link></li>
         <li className='text-purple-900  hover:underline'><Link>All Toys</Link></li>
+        { user ? <li className='text-purple-900  hover:underline'><Link to='/addToys'>Add A Toy</Link></li> :
+            <li className='hidden'>login</li>
+        }
+        { user ? <li className='text-purple-900  hover:underline'><Link>My Toy</Link></li> :
+            <li className='hidden'>login</li>
+        }
         
         {
             user?.email ? 
-                <li><button className='btn bg-purple-700 text-white font-semibold rounded-md'>LogOut</button></li>
+                <li><button onClick={LogOut}  className='btn bg-purple-700 text-white font-semibold rounded-md  hover:bg-transparent hover:border-purple-700 hover:border-2 hover:text-purple-700 mt-3'>LogOut</button></li>
             : 
-                <li className='btn bg-purple-700 text-white font-semibold rounded-md'><Link to='/login'>Login</Link></li>
+                <li><Link  className='btn bg-purple-700 text-white font-semibold rounded-md  hover:bg-transparent hover:border-purple-700 hover:border-2 hover:text-purple-700' to='/login '>Login</Link></li>
         }
+        
+        <li className='w-20'><img className='w-full rounded-full' src={user?.photoURL} alt="" /></li>
     </>
 
     return (

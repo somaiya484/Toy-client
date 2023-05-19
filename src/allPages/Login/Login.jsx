@@ -27,6 +27,7 @@ const Login = () => {
             const loggedUser = result.user;
             navigate('/')
             event.target.reset()
+            console.log(loggedUser)
         })
         .catch(error => {
             setError("Sorry, Email/Password dose not match")
