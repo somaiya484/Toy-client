@@ -16,7 +16,8 @@ const AllToys = () => {
             <table className="table table-compact w-full">
                 <thead className="text-center ">
                     <tr>
-                        <th className="bg-purple-200 py-5">Seller</th>
+                        <th className="bg-purple-200 py-5">No.</th>
+                        <th className="bg-purple-200 py-5">Name</th>
                         <th className="bg-purple-200">Toy Name</th>
                         <th className="bg-purple-200">Toy category</th>
                         <th className="bg-purple-200">Price</th>
@@ -26,9 +27,10 @@ const AllToys = () => {
                     </tr>
                 </thead>
                 {
-                    toys.map(toy => (
+                    toys.map((toy, index) => (
                         <tbody key={toy.id} className="text-center px-3">
                             <tr>
+                                <td>{index + 1}</td>
                                 <td>{toy?.userName}</td>
                                 <td>{toy.toyName}</td>
                                 <td>{toy.status}</td>

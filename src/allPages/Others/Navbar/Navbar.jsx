@@ -18,7 +18,7 @@ const Navbar = () => {
         { user ? <li className='text-purple-900  hover:underline'><Link to='/addToys'>Add A Toy</Link></li> :
             <li className='hidden'>login</li>
         }
-        { user ? <li className='text-purple-900  hover:underline'><Link>My Toy</Link></li> :
+        { user ? <li className='text-purple-900  hover:underline'><Link to='/myToys'>My Toy</Link></li> :
             <li className='hidden'>login</li>
         }
         
