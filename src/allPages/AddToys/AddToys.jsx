@@ -5,7 +5,7 @@ import swal from "sweetalert";
 
 const AddToys = () => {
   const { user } = useContext(AuthContext)
-  const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const { register, handleSubmit, formState: { errors } } = useForm();
 
   const onSubmit = data => {
     console.log(data)
@@ -20,8 +20,7 @@ const AddToys = () => {
       })
       if(onSubmit){
         swal("Great!", "Your data successfully added", "success");
-      }
-    
+      }    
   };
 
 
@@ -57,9 +56,10 @@ const AddToys = () => {
         </div>
         <select className="border-purple-500 border-2 p-4 m-2 rounded w-2/4" {...register("status")}>
           <option value="category">Category</option>
-          <option value=" mathToys"> Math Toys</option>
-          <option value="languageToys">Language Toys</option>
-          <option value="scienceToys">Science Toys</option>
+          <option value=" MathToys"> Math Toys</option>
+          <option value="Knowledge Buildup">Knowledge Buildup Toys</option>
+          <option value="Language Toys">Language Toys</option>
+          <option value="Science Toys">Science Toys</option>
         </select>
 
         <div className="flex">

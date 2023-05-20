@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext,  } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../authProviders/AuthProvider';
 
@@ -14,7 +14,7 @@ const Navbar = () => {
     const navbarPages = <>
         <li className='text-purple-900 hover:underline'><Link>Home</Link></li>
         <li className='text-purple-900  hover:underline'><Link>Blogs</Link></li>
-        <li className='text-purple-900  hover:underline'><Link>All Toys</Link></li>
+        <li className='text-purple-900  hover:underline'><Link to='allToys'>All Toys</Link></li>
         { user ? <li className='text-purple-900  hover:underline'><Link to='/addToys'>Add A Toy</Link></li> :
             <li className='hidden'>login</li>
         }

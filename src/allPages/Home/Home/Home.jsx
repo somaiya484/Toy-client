@@ -1,6 +1,8 @@
 import Gallery from "../../Others/Gallery/Gallery";
 import BannerSec from "../BannerSec/BannerSec";
 
+
+
 const Banner = () => {
     return (
         <div className="bg-purple-100">
