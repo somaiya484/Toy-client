@@ -12,33 +12,34 @@ const AllToys = () => {
     }, [])
 
     return (
-        <div className="overflow-x-auto px-6">
+        <div className="overflow-x-auto px-6 py-12">
             <table className="table table-compact w-full">
-                <thead>
+                <thead className="text-center">
                     <tr>
-                        <th>Name</th>
-                        <th>Job</th>
-                        <th>company</th>
-                        <th>location</th>
-                        <th>Last Login</th>
+                        <th>Seller</th>
+                        <th>Toy Name</th>
+                        <th>Toy category</th>
+                        <th>Price</th>
+                        <th>Available Quantity</th>
+                        <th></th>
 
                     </tr>
                 </thead>
-                <tbody>
-                    {
-                        toys.map(toy => (
-                            <div key={toy.id}>
-                                <tr>
-                                    <td>{toy.sellerEmail}</td>
-                                    <td>{toy.toyName}</td>
-                                    <td>{toy.toyName}</td>
-                                    <td>{toy.userName}</td>
-                                    <td>{toy.price}</td>
-                                </tr>
-                            </div>
-                        ))
-                    }
-                </tbody>
+                {
+                    toys.map(toy => (
+                        <tbody key={toy.id} className="text-center">
+                            <tr>
+                                <td>{toy.sellerEmail}</td>
+                                <td>{toy.toyName}</td>
+                                <td>{toy.toyName}</td>
+                                <td>{toy.userName}</td>
+                                <td>{toy.price}</td>
+                                <td><button className=" bg-purple-700 text-white font-normal hover:bg-transparent hover:text-black hover:border-purple-700 hover:border-2 py-1 px-3 rounded
+                                ">View Details</button></td>
+                            </tr>
+                        </tbody>
+                    ))
+                }
             </table>
         </div>
     );
