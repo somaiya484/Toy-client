@@ -9,7 +9,7 @@ const AddToys = () => {
 
   const onSubmit = data => {
     console.log(data)
-    fetch("http://localhost:5000/addToys", {
+    fetch("https://toy-shop-server-sepia.vercel.app/addToys", {
       method: "POST",
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)

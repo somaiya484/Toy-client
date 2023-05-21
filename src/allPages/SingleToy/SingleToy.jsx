@@ -4,7 +4,7 @@ const SingleToy = () => {
     const [singleToys, setSingleToys] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/singleToy/6467d9921bff4065c244b99d`)
+        fetch(`https://toy-shop-server-sepia.vercel.app/singleToy/6467d9921bff4065c244b99d`)
             .then((res) => res.json())
             .then((data) => setSingleToys(data));
     }, [])

@@ -17,7 +17,7 @@ const MyToys = () => {
     };
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myToys/${user?.email}`)
+        fetch(`https://toy-shop-server-sepia.vercel.app/myToys/${user?.email}`)
             .then(result => result.json())
             .then(data => setMyToys(data))
     }, [user]);
