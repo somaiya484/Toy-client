@@ -20,7 +20,9 @@ import { FaStar } from 'react-icons/fa';
 const Category = () => {
     return (
         <div className='w-3/4 m-auto'>
-            <Tabs className='text-center'>
+            <h5 className='text-4xl text-purple-700 text-center font-bold my-5 pb-6'>Categories</h5>
+
+            <Tabs className='text-center' data-aos="zoom-in-down">
                 <TabList className='bg-purple-500 rounded text-white font-medium '>
                     <Tab>Engineering Toys</Tab>
                     <Tab>Science Toys</Tab>

@@ -55,8 +55,6 @@ const AllToys = () => {
                                 <td>{toy.status}</td>
                                 <td>{toy.price}</td>
                                 <td>{toy.quantity}</td>
-                                <td>{toy.
-                                description}</td>
                                 <td><button className=" bg-purple-700 border-2 border-purple-700  text-white font-normal hover:bg-transparent hover:text-black hover:border-purple-700 hover:border-2 py-1 px-3 rounded
                                 "><Link to="/singleToy">View Details</Link></button></td>
                             </tr>

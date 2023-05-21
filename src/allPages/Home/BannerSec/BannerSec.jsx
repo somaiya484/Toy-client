@@ -7,7 +7,7 @@ const BannerSec = () => {
     return (
         <div className="carousel w-full  h-[700px]">
             <div id="slide1" className="carousel-item relative w-full">
-                <img src={banner1} className="w-full" />
+                <img src={banner2} className="w-full" />
                 <div className="absolute  flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#5c22e0c4] to-[#faf9fa19]">
                     <div className='text-[#1a1818] space-y-7 pl-20 w-3/4 '>
                         <h2 className='text-6xl font-bold leading-tight'>Explore the World <br />of Knowledge with Our Toys!</h2>
@@ -21,7 +21,7 @@ const BannerSec = () => {
                 </div>
             </div>
             <div id="slide2" className="carousel-item relative w-full">
-                <img src={banner2} className="w-full h-4/4" />
+                <img src={banner3} className="w-full h-4/4" />
                 <div className="absolute  flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#5c22e0c4] to-[#faf9fa19]">
                     <div className='text-[#1a1818] space-y-7 pl-20 w-3/4 '>
                         <h2 className='text-6xl font-bold leading-tight'>Unlock The Power of thought with our Knowledge-Boosting Toys!</h2>
@@ -35,7 +35,7 @@ const BannerSec = () => {
                 </div>
             </div>
             <div id="slide3" className="carousel-item relative w-full">
-                <img src={banner3} className="w-full " />
+                <img src={banner1} className="w-full " />
                 <div className="absolute  flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#5c22e0c4] to-[#faf9fa19]">
                     <div className='text-[#1a1818] space-y-7 pl-20 w-3/4 '>
                         <h2 className='text-6xl font-bold leading-tight'>Discover Endless <br /> Adventures with Educational Toys!</h2>

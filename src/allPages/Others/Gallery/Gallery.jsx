@@ -12,7 +12,8 @@ const Gallery = () => {
     return (
         <div className="my-32 text-4xl font-bold ">
             <h2 className="text-center mb-8">Some Of Our <span className="text-purple-700"> Genius Toys</span> </h2>
-            <div className="flex  items-center justify-center  px-12">
+            <div className="flex  items-center justify-center  px-12 " data-aos="fade-up"
+     data-aos-duration="3000">
                 <div className="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3">
                     <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-lg hover:shadow-black/30  h-80  rounded">
                         <div className="h-96 w-72">

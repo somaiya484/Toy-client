@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import loginPhoto from '../../assets/login.jpg'
 import {  useContext, useState } from 'react';
 import { AuthContext } from '../../authProviders/AuthProvider';
@@ -9,9 +9,10 @@ import app from '../../firebase/firebase.config';
 const Login = () => {
     const [user, setUser] = useState({});
     const auth = getAuth(app);
-
     const {signIn} = useContext(AuthContext);
     const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/'
     const [error, setError] = useState('');
 
     const handleLogIn = (event) => {
@@ -25,7 +26,7 @@ const Login = () => {
         signIn(email, password)
         .then(result =>{
             const loggedUser = result.user;
-            navigate('/')
+            // navigate('/')
             event.target.reset()
             console.log(loggedUser)
         })
