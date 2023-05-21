@@ -32,9 +32,9 @@ const Category = () => {
 
                 <TabPanel>
                     <div className="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3">
-                        <div className="card w-full bg-base-100 shadow-lg my-10">
+                        <div className="card w-full bg-base-100 shadow-lg my-10  h-3/4">
                             <figure className="px-10 pt-10">
-                                <img src={engineering1} alt="Shoes" className="rounded-xl" />
+                                <img src={engineering1} alt="Shoes" className="rounded-xl  w-full h-full" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title font-bold text-purple-700">Bridges & Skyscrapers</h2>
@@ -47,9 +47,9 @@ const Category = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="card w-full bg-base-100 shadow-lg my-10">
+                        <div className="card w-full bg-base-100 shadow-lg my-10  h-3/4">
                             <figure className="px-10 pt-10">
-                                <img src={engineering2} alt="Shoes" className="rounded-xl" />
+                                <img src={engineering2} alt="Shoes" className="rounded-xl w-full h-full" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title font-bold text-purple-700">Stem Toys</h2>
@@ -62,9 +62,9 @@ const Category = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="card w-full bg-base-100 shadow-lg my-10">
+                        <div className="card w-full bg-base-100 shadow-lg my-10  h-3/4">
                             <figure className="px-10 pt-10">
-                                <img src={engineering3} alt="Shoes" className="rounded-xl h-full" />
+                                <img src={engineering3} alt="Shoes" className="rounded-xl h-full w-full h-full" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title font-bold text-purple-700">Engineering tools</h2>
@@ -85,9 +85,9 @@ const Category = () => {
 
                 <TabPanel>
                     <div className="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3">
-                        <div className="card w-full bg-base-100 shadow-lg my-10">
+                        <div className="card w-full bg-base-100 shadow-lg my-10  h-3/4">
                             <figure className="px-10 pt-10">
-                                <img src={science3} alt="Shoes" className="rounded-xl" />
+                                <img src={science3} alt="Shoes" className="rounded-xl w-full h-full" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title font-bold text-purple-700">Toy microscope</h2>
@@ -100,9 +100,9 @@ const Category = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="card w-full bg-base-100 shadow-lg my-10">
+                        <div className="card w-full bg-base-100 shadow-lg my-10  h-3/4">
                             <figure className="px-10 pt-10">
-                                <img src={science2} alt="Shoes" className="rounded-xl" />
+                                <img src={science2} alt="Shoes" className="rounded-xl w-full h-full" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title font-bold text-purple-700">Electric Wiggler Kinetic</h2>
@@ -115,9 +115,9 @@ const Category = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="card w-full bg-base-100 shadow-lg my-10">
+                        <div className="card w-full bg-base-100 shadow-lg my-10  h-3/4">
                             <figure className="px-10 pt-10">
-                                <img src={science1} alt="Shoes" className="rounded-xl" />
+                                <img src={science1} alt="Shoes" className="rounded-xl w-full h-full" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title font-bold text-purple-700">Robo Wunderkind</h2>
@@ -137,9 +137,9 @@ const Category = () => {
 
                 <TabPanel>
                     <div className="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3">
-                        <div className="card w-full bg-base-100 shadow-lg my-10">
+                        <div className="card w-full bg-base-100 shadow-lg my-10  h-3/4">
                             <figure className="px-10 pt-10">
-                                <img src={math1} alt="Shoes" className="rounded-xl" />
+                                <img src={math1} alt="Shoes" className="rounded-xl w-full h-full" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title font-bold text-purple-700">Geometric Stacker</h2>
@@ -152,9 +152,9 @@ const Category = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="card w-full bg-base-100 shadow-lg my-10">
+                        <div className="card w-full bg-base-100 shadow-lg my-10  h-3/4">
                             <figure className="px-10 pt-10">
-                                <img src={math2} alt="Shoes" className="rounded-xl" />
+                                <img src={math2} alt="Shoes" className="rounded-xl w-full h-full" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title font-bold text-purple-700">Bubble Push</h2>
@@ -167,9 +167,9 @@ const Category = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="card w-full bg-base-100 shadow-lg my-10">
+                        <div className="card w-full bg-base-100 shadow-lg my-10  h-3/4">
                             <figure className="px-10 pt-10">
-                                <img src={math3} alt="Shoes" className="rounded-xl" />
+                                <img src={math3} alt="Shoes" className="rounded-xl w-full h-full" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title font-bold text-purple-700">Magnetic Math</h2>
@@ -192,41 +192,3 @@ const Category = () => {
 export default Category;
 
 
-{/* <div className="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3">
-<div className="card w-full bg-base-100 shadow-xl">
-    <figure className="px-10 pt-10">
-        <img src="https://www.edsys.in/wp-content/uploads/41VuoZwCdL._AC_SY400_.jpg" alt="Shoes" className="rounded-xl" />
-    </figure>
-    <div className="card-body items-center text-center">
-        <h2 className="card-title">Shoes!</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
-        <div className="card-actions">
-            <button className="btn btn-primary">Buy Now</button>
-        </div>
-    </div>
-</div>
-<div className="card w-full bg-base-100 shadow-xl">
-    <figure className="px-10 pt-10">
-        <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" className="rounded-xl" />
-    </figure>
-    <div className="card-body items-center text-center">
-        <h2 className="card-title">Shoes!</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
-        <div className="card-actions">
-            <button className="btn btn-primary">Buy Now</button>
-        </div>
-    </div>
-</div>
-<div className="card w-full bg-base-100 shadow-xl">
-    <figure className="px-10 pt-10">
-        <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" className="rounded-xl" />
-    </figure>
-    <div className="card-body items-center text-center">
-        <h2 className="card-title">Shoes!</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
-        <div className="card-actions">
-            <button className="btn btn-primary">Buy Now</button>
-        </div>
-    </div>
-</div>
-</div> */}

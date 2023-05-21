@@ -9,7 +9,7 @@ import BannerSec from "../BannerSec/BannerSec";
 
 const Banner = () => {
     return (
-        <div className="bg-purple-100">
+        <div className="">
             <BannerSec></BannerSec>
             <About></About>
             <Gallery></Gallery>

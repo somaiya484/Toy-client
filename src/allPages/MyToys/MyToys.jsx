@@ -55,7 +55,6 @@ const MyToys = () => {
                                 <td>{myToy.price}</td>
                                 <td>{myToy.quantity}</td>
                                 <td>{myToy.rating}</td>
-                                <td>{myToy.description}</td>
                                 <td>
                                     <button onClick={openModal} className=" bg-purple-700 border-2 border-purple-700  text-white font-normal hover:bg-transparent hover:text-black hover:border-purple-700 hover:border-2 py-1 px-2 rounded">Update</button>
 
