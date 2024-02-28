@@ -6,7 +6,6 @@ import Login from './allPages/Login/Login';
 import Signup from './allPages/SignUp/Signup';
 import AllToys from './allPages/AllToys/AllToys';
 import AddToys from './allPages/AddToys/AddToys';
-import Blog from './allPages/Blog/Blog';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,8 +18,6 @@ function App() {
     '/about': 'About',
     '/addToys': 'AddToys',
     '/myToys': 'MyToys',
-    '/blog': 'Blog',
-
   }
 
   const location = useLocation()
@@ -40,7 +37,6 @@ function App() {
         <Route path="/signUp" element={<Signup></Signup>} />
         <Route path="/addToys" element={<AddToys></AddToys>} />
         <Route path="/myToys" element={<AddToys></AddToys>} />
-        <Route path="/blog" element={<Blog></Blog>} />
       </Routes>
 
       <h1>Vite + React</h1>
